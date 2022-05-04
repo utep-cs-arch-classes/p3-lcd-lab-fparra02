@@ -1,5 +1,5 @@
 #include "text.h"
-#include "state_machines.h"
+#include "state_machine.h"
 #include "switches.h"
 #include "draw_shapes.h"
 #include "buzzer.h"
@@ -39,7 +39,7 @@ void text(void){
   }
   else if(text_counter > 50){
     clearScreen(COLOR_BLUE);
-    dance_counter = 0;
+    text_counter = 0;
     buzzer_set_period(0);
   }
 }

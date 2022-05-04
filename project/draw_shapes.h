@@ -11,6 +11,8 @@ extern short redrawScreen;
 void draw_SI1(u_int center);
 void draw_SI2(u_int center);
 void draw_SI3(u_int center);
+void clear_SI3(u_int center);
+
 
 #endif
 
