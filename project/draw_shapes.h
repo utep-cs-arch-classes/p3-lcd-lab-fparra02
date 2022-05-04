@@ -1,12 +1,16 @@
-#ifndef _DRAW_SHAPES_H_
+#ifndef _DRAW_SHAPES_H
 #define _DRAW_SHAPES_H_
 
-/* draws space invaders */
+#include <msp430.h>
+#include "lcdutils.h"
+#include "lcddraw.h"
+#include "switches.h"
 
-void draw_space_invader(int c);
+extern short redrawScreen;
 
-void draw_space_invader2(int c);
+void draw_SI1(u_int center);
+void draw_SI2(u_int center);
+void draw_SI3(u_int center);
 
-void draw_space_invader3(int c);
+#endif
 
-#endif // _DRAW_SHAPES_H_ 
